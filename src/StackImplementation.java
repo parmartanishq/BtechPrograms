@@ -47,9 +47,9 @@ public class StackImplementation {
         if(isStackEmpty()){ System.out.println(":/NO ELEMENTS FOUND! STACK IS EMPTY."); }
         else
         {
-            System.out.print("STACK: [");
-            for(int i = 0; i <= top; i++) { System.out.print( " "+stack[i]); }
-            System.out.print(" ]");
+            System.out.print("STACK: [ ");
+            for(int i = 0; i <= top; i++) { System.out.print(stack[i]+", "); }
+            System.out.print("]");
         }
     }
     //main function
@@ -62,7 +62,8 @@ public class StackImplementation {
                 String choice; //variable for do-while condition
             Scanner scan = new Scanner(System.in); //object creation for input from user
         do {
-            if (obj.isStackEmpty()) {
+            if (obj.isStackEmpty())
+            {
                 System.out.println(":/STACK IS EMPTY!\nCreate Stack-->");
                 System.out.print("ENTER STACK SIZE: ");
                 size = scan.nextInt();
@@ -77,7 +78,8 @@ public class StackImplementation {
             }
             System.out.println("\nCHOOSE OPERATION \n1. PEEK\n2. PUSH\n3. POP\n4. DISPLAY");
             byte opt = scan.nextByte();
-            switch (opt) {
+            switch(opt)
+            {
                 case 1: //case used for fetching top element of a stack
                     System.out.println("TOP ELEMENT: "+obj.stack[obj.top]);
                     break;
