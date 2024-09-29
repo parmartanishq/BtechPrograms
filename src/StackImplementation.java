@@ -98,7 +98,7 @@ public class StackImplementation {
                     System.out.println(":/CHOICE UNAVAILABLE");
                     break;
             }
-            System.out.println("\n:>Do you want to continue");
+            System.out.print("\n:>Do you want to continue: ");
             choice = scan.next();
         }while (choice.equals("Y")||choice.equals("y"));
         scan.close();//terminating Scanner object
