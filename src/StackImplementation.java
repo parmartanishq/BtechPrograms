@@ -2,7 +2,7 @@ import java.util.*;
 
 //this program is implemented to understand the STACK data structure using arrays.
 public class StackImplementation {
-        //create stack pointer variable indication the top element
+        //create stack pointer variable indicating the top element
         public int top = -1;
         //create stack variable
         public int[] stack;
